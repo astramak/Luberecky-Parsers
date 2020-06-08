@@ -44,9 +44,6 @@ function telegram($text) {
 	$token = $json_a['token'];
 	$json_expire = $json_a['expires_in'];
 
-	$savenewtoken = "INSERT INTO `tokens_lk` (`id`, `token`, `time`) VALUES (NULL, '$token', '$json_expire');";
-	$sqlsavenewtoken = mysqli_query($conn, $savenewtoken);
-
 
 
 $headers = array(
